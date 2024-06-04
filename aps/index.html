@@ -13,7 +13,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
-">
+"> <!--A tag body recebe aqui uma imagem de fundo, de posição fixa, conhecida como Paralax-->
     <header>
         <h1>Lixo Eletrônico</h1>
         <nav>
@@ -23,12 +23,12 @@ background-attachment: fixed;
                 <li><a href="./subpages/iniciatives.html">iniciativas</a></li>
                 <li><a href="./subpages/bibliografy.html">Bibliografia</a></li>
             </ul>   
-        </nav>
-<div class="spacer medium"></div>
+        </nav> <!--A tag nav, aqui é usada para envelopar o cabeçalho/menu da página-->
+<div class="spacer medium"></div><!--as divs co classe spacer, são usadas para criar espaçamento entre elementos da página-->
     </header>
-    <main id="main_body">
-    <section class="wrapper">
-        <div class="text-segement">
+    <main id="main_body"><!--A tag main engloba o conteúdo propriamente dito da página-->
+    <section class="wrapper"><!--A classe de elementos wrapper é usada para englobar porções de conteúdo, diferenciando os Planos de fundo-->
+        <div class="text-segement"> <!--A classe text segment é um bloco de texto modular, que oferece um layout reutilizável em todo o site-->
             <div id="page_title">
                 <h1 class="title">O Lixo Eletrônico</h1>
             </div>
@@ -42,14 +42,7 @@ background-attachment: fixed;
             </div>
         </div>
     </section>
-    <section class="paralax"></section>
-
-        <div id="motherboard" style="background-image: url(images/motherboard.jpg);">
-            <div id="board" class="components">
-
-            </div>
-        </div>
-        <div id="solutions">
+        <div id="solutions"> <!--Essa porção do código delimita a estrutura das tabs que apresentarão as soluções para o tema abordado-->
             <div id="container">
                 <div class="tab-buttons">
                     <button type="button" title="home" class="tab-btn" content-id="solutions"><img class="tab-icon" alt="home" src="./images/home.png" alt="home"></button>
