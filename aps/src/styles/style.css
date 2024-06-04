@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+}
+
+body {
+    margin:0px;
+    /*background-color: #353432;*/
+    justify-content: center;
+    align-items: baseline;
+    background-image: url();
+
+}/*Essa classe determina o estilo da secção body, retirando as margens, dando a cor do fundo da página e centralizando o conteúdo*/
+
+
+header h1 {
+    text-align: center;
+    color: white;
+    font-family: "DM Serif Display", serif;
+}/*Essa classe define o layout padronizado para títulos 'h1' dentro da tag 'header'*/
+
+header{
+    background-color: #353432;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.9);
+}
+
+.spacer{
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.large{
+    height: 30px;
+}
+
+.medium{
+    height: 15px;
+}
+
+.small{
+    height: 10px;
+}
+
+/*===================================================================================================================================================================*/
+
+#navbar {
+    list-style: none;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+} /*Essa classe define parametros de estilo para o elemento de id navbar, retirando os indicadores de uma lista não ordenada*/
+
+#navbar ul {
+    background-color: #353432;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+} /*Essa classe determina o estilo dos elementos dentro da tag 'ul', dentro da tag de id 'navbar'*/
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+} /*Essa classe define o estilo dos elemêntos âncora, dentro do elemento de id 'navbar', retirândo decorações de texto supérfulas e o centralizando*/
+
+#navbar li a:hover {
+    background-color: #4e4d4a;
+    color: #94ba65;
+    transition: background-color .8s; 
+    transition: color .8s;
+}/*Essa classe determina a animação que */
+
+#navbar li {
+    float: left;
+}
+
+.wrapper{
+    max-width: auto;
+    background-color: #4e4d4a;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    box-shadow: 15px 0px 15px 0px rgba(0, 0, 0, 0.9);
+} /*O segmento wrapper envolve todo o conteúdo da página, criando o limite de onde o conteúdo aparecerá*/ 
+
+.text-segment{
+    height: auto;
+    width: 80%;
+    
+} /*A classe text-segment dá o layout padrão para segmentos de texto, que contem um título, uma coluna de texto e uma Imagem sobre o assnto*/
+
+/*===================================================================================================================================================================*/
+
+.content {
+    display: none;
+} /*Essa classe determina a exibição de conteúdo inserido na classe 'content'*/
+
+.content.show {
+    display: flex;
+}/*Aqui inserimos uma classe de exibição, que será usada para que o javascript determine qual aba será mostrada ao usuário*/
+
+.tab-icon {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}/*Essa classe determina o tamanho do ícone das tabs de soluções*/
+
+.tab-buttons{
+    display: flex;
+    gap: 6px;
+    text-align: center;
+}/*Essa classe determina o estilo dos botões, os quais o usuário poderá navegar entre as tabs*/
+
+.content-img {
+    width: 50%;
+    min-height: 250px;
+    max-height: 400px;
+}
+
+#container{
+    background-color: #e4e3e3;
+    border-radius: 8px;
+    width: 1000px;
+    height:500px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#container .content-title{
+    font-family: "Oswald", sans-serif;;
+}
+
+.content {
+    display: none;
+}
+
+.content.show {
+    display:flex;
+}
+
+.tab-btn{
+    width: 100%;
+    border: none;
+    background-color: #e4e3e3;
+    padding: 8px;
+    cursor: pointer;
+    display:flex;
+    border-radius: 8px 8px 0px 0px;
+    transition: background-color .3s ease;
+}
+
+.tab-btn.active{
+    background-color: #c0bfbf;
+}
+
+.tab-btn:hover{
+    background-color: #c0dfdf;
+}
+.content.show{
+    display:flex;
+    gap: 14px;
+    background-color: #c0bfbf;
+    border-radius: 0px 0px 8px 8px;
+    padding: 16px;
+}
+
+#solutions{
+    align-items: center;
+}
+/*===================================================================================================================================================================*/
+
+#board{
+    background-image: url(images/motherboard.jpg);
+}
+
+section{
+    width: 100%;
+    height: 600px;
+
+}
+
+section:nth-of-type(1){
+    background-image: url();
+}
