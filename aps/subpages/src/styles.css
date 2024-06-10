@@ -53,7 +53,7 @@ header{
 #navbar li a:hover{
     background-color: #4e4d4a;
     color: #94ba65;
-    transition: background .6s; 
+    transition: background-color .6s; 
     transition: color .8s;
 }
 
@@ -69,7 +69,7 @@ header{
     border-radius: 8px;
     display: flex;
     padding: 0 30px 0 30px;
-    width: 80%;
+    width: 95%;
     border: 2px solid black;
     text-align: center;
     align-content: center;
@@ -77,20 +77,37 @@ header{
 
 }
 
-.reference-link .link-btn{
-    position: relative;
+.title-wrap{
+    width: 50%;
+    text-align: left;
+}
+
+.title-wrap h1{
+    font-family: "Oswald", sans-serif;
+    text-align: left;
+    margin: 15px
+}
+
+.btn-wrap{
+    text-align: center;
+    width: 50%;
+
+}
+
+.btn-wrap button{
     top: 35%;
     border: 0;
     border-radius: 16px;
     height: 30px;
     width: 360px;
-    right: -700px;
     color:#0a0a0a;
     font-weight: 700;
     font-size: large;
     background-color: #94ba65;
     cursor: pointer;
     box-shadow: 0px 4px ;
+    margin: 35px 30px 35px 30px;
+    font-family: "Roboto", sans-serif;
 }
 
 .reference-link button:hover{
@@ -104,38 +121,28 @@ header{
 }
 
 .wrapper{
-    padding: 15px 0px 15px 0px;
+    margin: 30px 10px;
+    height: auto;
 }
 /*=======================================================================*/
-
-.abree{
-    position: relative;
-    top: 35%;
-    border: 0;
-    border-radius: 16px;
-    height: 30px;
-    width: 360px;
-    right: -35px;
-    color:#0a0a0a;
-    font-weight: 700;
-    font-size: large;
-    background-color: #94ba65;
-    cursor: pointer;
-    box-shadow: 0px 4px ;
-}
 
 /*=======================================================================*/
 
 .text-block{
     background-color: #4e4d4a;
-    border: 2px solid black;
-    border-radius: 16px;
     display: flex;
-    height: 350px;
+    height: auto;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.9);
+}
+
+.text{
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    margin: 15px;
 }
 
 .intro h1{
-    font-family: Oswald, sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
 }
 
@@ -149,18 +156,46 @@ header{
     margin: 50px;
     background-color: #353432;
     border-radius: 8px;
+    margin: 15px;
     color: white;
     justify-content: left;
 }
 
 .text-block-image{
     width: 44%;
-    margin: 6%;
+    min-height: 80%;
+    margin: 50px 50px 50px 50px;
     border-radius: 8px;
 }
 
-.text-block-image img{
-    border-radius: 8px;
-    margin: 5px;
-    object-fit: fit;
+ul{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    text-align: left;
+}
+
+.spacer{
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.large{
+    height: 100px;
+}
+
+.medium{
+    height: 50px;
+}
+
+.small{
+    height: 30px;
+}
+
+footer{
+    background-color: #353432;
+    width: 100%;
+    height: 100px;
+
 }
